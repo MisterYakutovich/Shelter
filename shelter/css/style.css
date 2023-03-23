@@ -1,0 +1,141 @@
+@font-face { 
+    font-family: "ArialRegular";
+    src: local(''),
+         url('../fonts/ArialRegular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+body {
+    margin: 0px;
+    padding: 0px;  
+  }
+  html { 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+ 
+ 
+  *,*::before,*::after{
+    box-sizing: inherit;
+  }
+  .wrapper {
+    max-width: 1280px;
+    margin: 0px;
+    height: 908px;
+    background: radial-gradient(100% 215.42% at 0% 0%, #5B482A 0%, #262425 100%);
+   
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 1200px;
+    height: 60px;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo {
+    width: 184px;
+    height: 60px;
+  }
+  .navbar {
+    position: relative;
+    width: 443px;
+    height: 27px;
+  }
+  .header_list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 27px;
+  }
+  .header_item {
+    margin-right: 35px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+  }
+  .header_item:last-child {
+    margin-right: 0;
+  }
+  .header_item:first-child {
+    margin-left: -38px;
+  }
+  .header_link {
+    color: #CDCDCD;
+    text-decoration: none;
+   }
+  .header_link_about {
+    color: #FAFAFA;
+    text-decoration: none;
+    border-bottom: 3px solid #F1CDB3;
+  }
+  /*---start_screen---*/
+  .start_screen {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 120px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 728px;
+   
+  }
+  .content_start_screen {
+    position: relative;
+    width: 460px;
+    height: 322px;
+    top: 163px;
+   
+  }
+  .content_start_screen h2 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 130%;
+    width: 310px;
+    height: 114px;
+    margin: 0px;
+  }
+  .content_start_screen p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    margin-top: 42px;
+    margin-bottom: 42px;
+    color: #CDCDCD;
+  }
+  .content_start_button {
+    width: 207px;
+    height: 52px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    
+  }
+  .start_screen_puppy_jpg{
+    width: 698px;
+    height: 728px;
+    background:url('../img/jpg/start-screen-puppy.jpg'), radial-gradient(100% 215.42% at 0% 0%,#5B483A 0%,#262425 100% ),
+    linear-gradient(0deg,#211f20,#211f20);/*100% 215.42% at 0% 0%,#5B483A 0%,#262425 100%*/
+    background-size: cover;
+    
+  }
