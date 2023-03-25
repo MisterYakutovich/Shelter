@@ -23,7 +23,8 @@ body {
     margin: 0px;
     height: 908px;
     background: radial-gradient(100% 215.42% at 0% 0%, #5B482A 0%, #262425 100%);
-   
+    background:url('../img/jpg/start-screen-puppy.jpg'), radial-gradient(100% 215.42% at 0% 0%,#5B483A 0%,#262425 100% ),
+    linear-gradient(0deg,#211f20,#211f20)
   }
   .header {
     display: flex;
@@ -144,9 +145,10 @@ body {
   .start_screen_puppy_jpg{
     width: 698px;
     height: 728px;
-    background:url('../img/jpg/start-screen-puppy.jpg'), radial-gradient(100% 215.42% at 0% 0%,#5B483A 0%,#262425 100% ),
-    linear-gradient(0deg,#211f20,#211f20);/*100% 215.42% at 0% 0%,#5B483A 0%,#262425 100%*/
-    background-size: cover; 
+    background:url('../img/jpg/start-screen-puppy.jpg'), linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+   /* background:url('../img/jpg/start-screen-puppy.jpg'), radial-gradient(100% 215.42% at 0% 0%,#5B483A 0%,#262425 100% ),
+    linear-gradient(0deg,#211f20,#211f20);/*100% 215.42% at 0% 0%,#5B483A 0%,#262425 100%
+    background-size: cover; */
   }
   /*---section about---*/
   .about {
@@ -252,7 +254,7 @@ body {
   margin-bottom: 0;
   cursor: pointer;
 }
-figure:hover button {
+.img_items:hover button {
   background-color: #FDDCC4;
 }
 
