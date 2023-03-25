@@ -19,7 +19,7 @@ body {
     box-sizing: inherit;
   }
   .wrapper {
-    max-width: 1280px;
+   /* max-width: 1280px;*/
     margin: 0px;
     height: 908px;
     background: radial-gradient(100% 215.42% at 0% 0%, #5B482A 0%, #262425 100%);
@@ -141,7 +141,7 @@ body {
   /*---section about---*/
   .about {
     height: 588px;
-    max-width: 1280px;
+   /* max-width: 1280px;*/
     background: #FFFFFF;
   }
   .wrapper_about {
@@ -321,7 +321,8 @@ body {
 .help {
   height: 611px;
   position: relative;
-  top: -35px;
+  top: 0px;
+  background-color: #FFFFFF;
 }
 .wrapper_help {
   width: 1200px;
@@ -385,4 +386,191 @@ body {
   color: #545454;
   margin-top: 27px;
   margin-bottom: 0;
+}
+/*---section donations---*/
+.donations {
+  height: 462px;
+  background-color: #F6F6F6;
+  position: relative;
+  top: 0px;
+}
+.wrapper_donations {
+  position: relative;
+  top:80px;
+  width: 915px;
+  height: 282px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper_donations img {
+  width: 505px;
+  height: 261px;
+  margin-top: 11px;
+}
+.donations_content {
+  width: 380px;
+  height: 282px;
+}
+.donations_content h3 {
+  width: 300px;
+  height: 90px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  align-items: center;
+  color: #545454;
+  margin: 0;
+}
+.donations_content h5 {
+  width: 308px;
+  height: 17px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.credit_card {
+ /* padding: 10px 15px;*/
+  width: 349px;
+  height: 43px;
+  background: #F1CBD3;
+  border-radius: 9px;
+}
+.credit_card .credit_card_icon img {
+  width: 30px;
+  height: 23px;
+  margin-left: 15px;
+  color: #292929;
+}
+.credit_card .credit_card_number {
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  margin-left: 15px;
+  position: relative;
+  top: -5px;
+  color: #545454;
+}
+.credit_card p {
+  width: 380px;
+  height: 72px;
+  font-family: 'Arial';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #B2B2B2;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+/*---footer---*/
+.footer {
+  height: 350px;
+  position: relative;
+  top: 0;
+  background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),#211F20;
+}
+.wrapper_footer {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  height: 310px;
+  position: relative;
+  top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer_contacts {
+  width: 278px;
+  height: 234px;
+  position: relative;
+  top: 16px;
+}
+.footer_contacts h3 {
+  width: 278px;
+  height: 90px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  margin: 0;
+}
+.contacts_items {
+  padding: 0;
+  margin: 0;
+ 
+}
+.contacts_items span {
+  margin-left: 20px;
+  position: relative;
+  top: -10px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CBD3;
+}
+.footer_contacts ul li {
+  list-style: none;
+  margin-top: 43px;
+  height: 26px;
+}
+.footer_locations {
+  width: 302px;
+  height: 234px;
+  position: relative;
+  top: 16px;
+}
+.footer_locations h3 {
+  width: 270px;
+  height: 90px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  margin: 0;
+}
+.footer_locations ul li {
+  list-style: none;
+  margin-top: 40px;
+  height: 26px;
+}
+.locations_items {
+  padding: 0;
+  margin: 0;
+ 
+}
+.locations_items span {
+  margin-left: 20px;
+  position: relative;
+  top: -10px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CBD3;
 }
