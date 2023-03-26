@@ -245,11 +245,11 @@
     cursor: pointer;
     background: #F1CBD3;
   }
-  .button_arrow_right_pets ._1 {
+  .button_arrow_right_pets .one {
     margin-left: 11px;
     margin-top: 19px;
   }
-  .button_arrow_right_pets ._2 {
+  .button_arrow_right_pets .two {
     margin-left: 18px;
     margin-top: 19px;
   }
