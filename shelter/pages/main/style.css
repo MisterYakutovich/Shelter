@@ -1,9 +1,67 @@
 @font-face { 
-    font-family: "ArialRegular";
+  font-family: "ArialRegular";
+  src: url("../fonts/ArialRegular.woff");
+  src: url("../fonts/ArialRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ArialRegular.woff") format("woff"),
+  url("../fonts/ArialRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face { 
+  font-family: "ArialItalic";
+  src: url("../fonts/ArialItalic.woff");
+  src: url("../fonts/ArialItalic.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/ArialItalic.woff") format("woff"),
+  url("../fonts/ArialItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+/*@font-face { 
+    font-family: "Arial";
     src: local(''),
          url('../fonts/ArialRegular.woff') format('woff');
     font-style: normal;
     font-weight: 400;
+}
+@font-face { 
+  font-family: "Arial";
+  src: local(''),
+       url('../fonts/ArialItalic.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}*/
+/*@font-face { 
+  font-family: "Georgia";
+  src: local(''),
+       url('../fonts/GeorgiaRegular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}*/
+/*@font-face { 
+  font-family: "Georgia";
+  src: local(''),
+       url('../fonts/GeorgiaBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}*/
+@font-face { 
+  font-family: "GeorgiaBold";
+  src: url("../fonts/GeorgiaBold.eot");
+  src: url("../fonts/GeorgiaBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GeorgiaBold.woff") format("woff"),
+  url("../fonts/GeorgiaBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face { 
+  font-family: "GeorgiaRegular";
+  src: url("../fonts/GeorgiaRegular.eot");
+  src: url("../fonts/GeorgiaRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GeorgiaRegular.woff") format("woff"),
+  url("../fonts/GeorgiaRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
 }
 body {
     margin: 0px;
@@ -23,8 +81,7 @@ body {
     margin: 0px;
     height: 908px;
     background: radial-gradient(100% 215.42% at 0% 0%, #5B482A 0%, #262425 100%);
-    background:url('../img/jpg/start-screen-puppy.jpg'), radial-gradient(100% 215.42% at 0% 0%,#5B483A 0%,#262425 100% ),
-    linear-gradient(0deg,#211f20,#211f20)
+   
   }
   .header {
     display: flex;
