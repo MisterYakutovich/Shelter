@@ -80,8 +80,9 @@ body {
     /*width: 1280px;*/
     margin: 0px;
     height: 908px;
+   /* background-image:url('../../img/jpg/start-screen-puppy.jpg'), radial-gradient(100% 215.42% at 0% 0%,#5B483A 0%,#262425 100% );*/
     background: radial-gradient(100% 215.42% at 0% 0%, #5B482A 0%, #262425 100%);
-   
+
   }
   .header {
     display: flex;
@@ -206,7 +207,8 @@ body {
   .start_screen_puppy_jpg{
     width: 698px;
     height: 728px;
-    background:url('../img/jpg/start-screen-puppy.jpg'), linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    color: #090979;
+   /* background:url('../img/jpg/start-screen-puppy.jpg'), linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);*/
    /* background:url('../img/jpg/start-screen-puppy.jpg'), radial-gradient(100% 215.42% at 0% 0%,#5B483A 0%,#262425 100% ),
     linear-gradient(0deg,#211f20,#211f20);/*100% 215.42% at 0% 0%,#5B483A 0%,#262425 100%
     background-size: cover; */
@@ -411,6 +413,7 @@ body {
   text-decoration: none;
 }
 .button_primary:hover {
+  border: 2px solid #F1CBD3;
   background-color: #FFFFFF;
   background-position: 0 100%;
   color:#5B483A;
