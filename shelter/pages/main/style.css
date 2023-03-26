@@ -172,6 +172,7 @@ body {
     width: 310px;
     height: 114px;
     margin: 0px;
+    color: #FFFFFF;
   }
   .content_start_screen p {
     font-family: 'Arial';
@@ -333,6 +334,7 @@ body {
   line-height: 23px;
   letter-spacing: 0.06em;
   margin-top: 30px;
+  color: #545454;
 }
 .img_items_button {
   position: relative;
