@@ -98,6 +98,9 @@ body {
     width: 184px;
     height: 60px;
   }
+  .header_logo_link {
+    cursor: default;
+  }
   .navbar {
     position: relative;
     width: 443px;
@@ -131,6 +134,7 @@ body {
     text-decoration: none;
    }
   .header_link_about {
+    cursor: default;
     color: #FAFAFA;
     text-decoration: none;
     border-bottom: 3px solid #F1CDB3;
@@ -377,7 +381,6 @@ body {
 }
 .button_arrow_right:hover {
   background-color: #FDDCC4;
-
 }
 .button_arrow_right img {
   width: 14px;
@@ -387,6 +390,9 @@ body {
   margin-top: 21px;
 }
 .button_primary {
+  padding-left: 45px;
+  padding-top: 15px;
+  display: block;
   width: 261px;
   height: 52px;
   background: #F1CBD3;
@@ -402,6 +408,7 @@ body {
   position: relative;
   top: 68px;
   cursor: pointer;
+  text-decoration: none;
 }
 .button_primary:hover {
   background-color: #FFFFFF;

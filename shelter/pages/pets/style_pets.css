@@ -104,6 +104,7 @@
     color: #292929;
     text-decoration: none;
     border-bottom: 3px solid #F1CDB3;
+    cursor: default;
   }
   .header_link_pets:hover, .header_link:focus, .header_link:active {
     border-bottom: 3px solid #F1CDB3;
@@ -123,7 +124,7 @@
     position: relative;
     top: 80px;
   }
-  .wrapper_pets_content h3 {
+  .wrapper_pets_content h1 {
     width: 400px;
     height: 90px;
     font-family: 'Georgia';
@@ -161,6 +162,9 @@
     margin-bottom: 0;
     cursor: pointer;
     margin-top: 15px;
+  }
+  .img_items_pets:hover button {
+    background-color: #FDDCC4;
   }
   .item_title_pets {
     width: 74px;
@@ -209,6 +213,16 @@
     border-radius: 100%;
     position: relative;
     cursor: pointer;
+  }
+  .button_arrow_right_pets:first-child {
+    border: 2px solid #CDCDCD;
+  }
+  .button_arrow_right_pets:nth-child(2) {
+    border: 2px solid #CDCDCD;
+  }
+  .button_arrow_right_pets:hover {
+    background-color: #FDDCC4;
+  
   }
   .button_arrow_right_number h4 {
     font-family: 'Georgia';
