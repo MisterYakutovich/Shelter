@@ -202,7 +202,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .button_arrow_right {
+  .button_arrow_right_pets {
     width: 52px;
     height: 52px;
     border: 2px solid #F1CBD3;
@@ -231,13 +231,120 @@
     cursor: pointer;
     background: #F1CBD3;
   }
-  .button_arrow_right ._1 {
+  .button_arrow_right_pets ._1 {
     margin-left: 11px;
     margin-top: 19px;
   }
-  .button_arrow_right ._2 {
+  .button_arrow_right_pets ._2 {
     margin-left: 18px;
     margin-top: 19px;
+  }
+  /*---footer---*/
+  .pets_footer {
+    height: 350px;
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),#211F20;
+  }
+  .wrapper_footer_pets {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 310px;
+    position: relative;
+    top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer_contacts_pets {
+    width: 278px;
+    height: 234px;
+    position: relative;
+    top: 16px;
+  }
+  .footer_contacts_pets h3 {
+    width: 278px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  .contacts_items_pets {
+    padding: 0;
+    margin: 0;
+  }
+  .contacts_items_pets span {
+    margin-left: 20px;
+    position: relative;
+    top: -10px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CBD3;
+  }
+  .footer_contacts_pets ul li {
+    list-style: none;
+    margin-top: 43px;
+    height: 26px;
+    transition: 1s;
+  }
+  .footer_contacts_pets ul li:hover {
+    transform: scale(1.2);
+  }
+  .footer_contacts_pets ul li a {
+    text-decoration: none;
+  }
+  .footer_locations_pets {
+    width: 302px;
+    height: 234px;
+    position: relative;
+    top: 16px;
+  }
+  .footer_locations_pets h3 {
+    width: 270px;
+    height: 90px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin: 0;
+  }
+  .footer_locations_pets ul li {
+    list-style: none;
+    margin-top: 40px;
+    height: 26px;
+    transition: 1s;
+  }
+  .footer_locations_pets ul li:hover {
+    transform: scale(1.2);
+  }
+  .footer_locations_pets ul li a {
+    text-decoration: none;
+  }
+  .locations_items_pets {
+    padding: 0;
+    margin: 0;
+  }
+  .locations_items_pets span {
+    margin-left: 20px;
+    position: relative;
+    top: -10px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #F1CBD3;
   }
   
   
