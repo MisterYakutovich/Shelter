@@ -42,6 +42,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
   }
+  :root {
+    --start-screen-gradient-background: url(
+    ../../img/jpg/noise_transparent@2x.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+    --footer-gradient-background: url(../../img/jpg/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  }
  
  
   *,*::before,*::after{
@@ -361,5 +366,7 @@
     letter-spacing: 0.06em;
     color: #F1CBD3;
   }
-  
-  
+  .dog_puppy_pets {
+    width: 300px;
+    height: 310px;
+  }
