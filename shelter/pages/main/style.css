@@ -100,12 +100,34 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+  .header_logo_link h2{
+    color: #F1CDB3;
+    font-size: 31px;
+    line-height: 110%;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.06em;
+    font-family: 'Georgia';
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+  .header_logo_link p {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 0;
+  }
   .logo {
     width: 184px;
     height: 60px;
   }
   .header_logo_link {
     cursor: default;
+    text-decoration: none;
   }
   .navbar {
     position: relative;
@@ -206,9 +228,11 @@ body {
     text-decoration: none;
     text-align: center;
     padding: 15px 0;
+    transition: all 0.5s ease-out;
   }
   .content_start_button:hover {
     background-color: #FDDCC4;
+   
   }
   .start_screen_puppy_jpg{
     width: 698px;
@@ -311,7 +335,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
- top: -8px;
+  top: 0px;
 }
 .img_items {
   width: 270px;
@@ -322,11 +346,16 @@ body {
   margin-right: 0;
   margin-bottom: 0;
   cursor: pointer;
+  border-radius: 9px;
+  transition: all 0.5s ease-out;
 }
 .img_items:hover button {
   background-color: #FDDCC4;
+  
 }
-
+.img_items:hover {
+  background: #FFFFFF;
+}
 .item_title {
   width: 74px;
   height: 23px;
@@ -346,6 +375,7 @@ body {
   width: 187px;
   height: 52px;
   border: 2px solid #F1CBD3;
+  background: #FAFAFA;
   border-radius: 100px;
   left: 41.5px;
   top: 30px;
@@ -357,6 +387,7 @@ body {
   color: #292929;
   letter-spacing: 0.06em;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 .button_arrow_left {
   width: 52px;
@@ -366,6 +397,11 @@ body {
   position: relative;
   top: 252px;
   cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+.img_items img {
+  display: block;
+  border-radius: 9px 9px 0 0;
 }
 .button_arrow_left:hover {
   background-color: #FDDCC4;
@@ -387,6 +423,7 @@ body {
   float: right;
   bottom: 243px;
   cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 .button_arrow_right:hover {
   background-color: #FDDCC4;
@@ -404,7 +441,7 @@ body {
   display: block;
   width: 261px;
   height: 52px;
-  background: #F1CBD3;
+  background: #F1CDB3;
   border-radius: 100px;
   font-family: 'Georgia';
   font-style: normal;
@@ -415,14 +452,13 @@ body {
   color: #292929;
   margin-left: 470px;
   position: relative;
-  top: 68px;
+  top: 60px;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.5s ease-out;
 }
 .button_primary:hover {
-  border: 2px solid #F1CBD3;
-  background-color: #FFFFFF;
-  background-position: 0 100%;
+  background: #FDDCC4;
   color:#5B483A;
 }
 /*---section help----*/
@@ -560,8 +596,10 @@ body {
  /* padding: 10px 15px;*/
   width: 349px;
   height: 43px;
-  background: #F1CBD3;
+  background: #F1CDB3;
   border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
 }
 .credit_card:hover {
   background-color: yellow;
@@ -584,7 +622,7 @@ body {
   top: -5px;
   color: #545454;
 }
-.credit_card p {
+.credit_card_title {
   width: 380px;
   height: 72px;
   font-family: 'Arial';
@@ -593,7 +631,7 @@ body {
   font-size: 12px;
   line-height: 18px;
   color: #B2B2B2;
-  margin-top: 24px;
+  margin-top: 20px;
   margin-bottom: 0;
 }
 .credit_card a {
@@ -648,7 +686,7 @@ body {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #F1CBD3;
+  color: #F1CDB3;
 }
 .footer_contacts ul li {
   list-style: none;
@@ -707,7 +745,7 @@ body {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #F1CBD3;
+  color: #F1CDB3;
 }
 .dog_puppy img {
   width: 300px;
