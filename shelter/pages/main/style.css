@@ -562,7 +562,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.wrapper_donations img {
+.wrapper_donations .wrapper_donations_img {
   width: 505px;
   height: 261px;
   margin-top: 11px;
@@ -655,7 +655,6 @@ body {
   width: 1200px;
   height: 310px;
   position: relative;
-  top: 40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -663,7 +662,7 @@ body {
   width: 278px;
   height: 234px;
   position: relative;
-  top: 16px;
+  top: 56px;
 }
 .footer_contacts h3 {
   width: 278px;
@@ -709,7 +708,7 @@ body {
   width: 302px;
   height: 234px;
   position: relative;
-  top: 16px;
+  top: 56px;
 }
 .footer_locations h3 {
   width: 270px;
@@ -755,6 +754,8 @@ body {
 .dog_puppy img {
   width: 300px;
   height: 310px;
+  position: relative;
+  top: 40px;
 }
 /*---start media 768----*/
 @media screen and (max-width: 768px){
@@ -870,4 +871,61 @@ body {
  .help_list_item:nth-child(n) {
   margin-left: 0px;
 }
+/*----section donations 768---*/
+.donations {
+  height: 783px;
+}
+.wrapper_donations {
+  max-width: 100%;
+  padding: 0 30px;
+}
+.wrapper_donations .wrapper_donations_img {
+  order: 1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+.donations_content {
+  margin-left: auto;
+  margin-right: auto;
+}
+.credit_card {
+  padding: 10px 15px;
+}
+.credit_card .credit_card_icon img {
+ margin-left: 0;
+}
+.credit_card .credit_card_number {
+  font-size: 19px;
+}
+/*----footer 768---*/
+.footer {
+  height: 639px;
+}
+.wrapper_footer {
+  max-width: 100%;
+  padding: 0 30px;
+  flex-wrap: wrap;
+  height: 100%;
+}
+.footer_contacts {
+  margin-left: 34px;
+  top: 30px;
+}
+.footer_locations {
+  margin-right: 34px;
+  top: 30px;
+}
+.contacts_items li:last-child {
+  height: 32px;
+
+}
+.dog_puppy {
+  margin-left: auto;
+  margin-right: auto;
+}
+.dog_puppy img {
+  top: 49px;
+}
+
 }
