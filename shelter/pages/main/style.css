@@ -264,6 +264,7 @@ body {
     width: 300px;
     height: 408px;
     margin-left: 175px;
+
   }
   .about_content {
     width: 430px;
@@ -294,6 +295,10 @@ body {
     color: #4C4C4C;
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+  .about_content .paragraf_two {
+    margin-bottom: 0px;
+    height: 144px;
   }
   /*---section pets---*/
 .pets {
@@ -374,7 +379,7 @@ body {
   position: relative;
   width: 187px;
   height: 52px;
-  border: 2px solid #F1CBD3;
+  border: 2px solid #F1CDB3;
   background: #FAFAFA;
   border-radius: 100px;
   left: 41.5px;
@@ -392,7 +397,7 @@ body {
 .button_arrow_left {
   width: 52px;
   height: 52px;
-  border: 2px solid #F1CBD3;
+  border: 2px solid #F1CDB3;
   border-radius: 100%;
   position: relative;
   top: 252px;
@@ -417,7 +422,7 @@ body {
 .button_arrow_right {
   width: 52px;
   height: 52px;
-  border: 2px solid #F1CBD3;
+  border: 2px solid #F1CDB3;
   border-radius: 100%;
   position: relative;
   float: right;
@@ -750,4 +755,119 @@ body {
 .dog_puppy img {
   width: 300px;
   height: 310px;
+}
+/*---start media 768----*/
+@media screen and (max-width: 768px){
+  .wrapper{
+    height: 1165px;
+  }
+  .header {
+    padding: 0 30px;
+    max-width: 100%;
+  }
+  .start_screen {
+    top: 90px;
+    max-width: 100%;
+    padding: 0 30px;
+    height: 1015px;
+    display: block;
+  }
+  .content_start_screen {
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content_start_button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .start_screen_puppy_jpg {
+    width: 569px;
+    height: 593px;
+    margin-top: 100px;
+    float: right;
+  }
+  /*----section about---*/
+  .about {
+    height: 1048px;
+  }
+  .wrapper_about {
+    max-width: 100%;
+    padding: 0 30px;
+    height: 868px;
+  }
+  .about_pets_jpg {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    order: 1;
+  }
+  .about_content {
+    margin-left: auto;
+    margin-right: auto;
+    order: 0;
+    margin-top: 0px;
+  }
+ /*----section pets---*/
+ .wrapper_pets {
+  max-width: 100%;
+  padding: 0 30px;
+ }
+ .slider {
+  width: 100%;
+  grid-template-columns: repeat(2,270px);
+  column-gap: 40px;
+  padding: 0 64px;
+ }
+ .slider .img_items:last-child {
+  display: none;
+ }
+ .item_title {
+  margin-bottom: 0px;
+ }
+ .img_items_button {
+  padding: 15px 45px;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0px;
+ }
+ .button_primary {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 45px;
+  font-size: 16px;
+ }
+ /*----section pets 768---*/
+ .help {
+  height: 779px;
+ }
+ .wrapper_help {
+  max-width: 100%;
+  height: 599px;
+  padding: 0 69px;
+ }
+ .wrapper_help h3 {
+  font-size: 34px;
+ }
+ .help_list {
+  height: 449px;
+  width: 100%;
+ }
+ .list_items {
+  display: grid;
+  grid-template-columns: repeat(3,170px);
+  grid-template-rows: repeat(3,113px);
+  column-gap: 60px;
+  row-gap: 55px;
+  height: 499px;
+ }
+ .help_list_item {
+  margin-left: 0;
+  margin-bottom: 0;
+ }
+ .help_list_item:nth-child(n) {
+  margin-left: 0px;
+}
 }
