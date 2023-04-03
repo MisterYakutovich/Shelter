@@ -851,10 +851,10 @@ body {
   padding: 0 30px;
  }
  .slider {
-  width: 100%;
+  width: 580px;
   grid-template-columns: repeat(2,270px);
   column-gap: 40px;
-  padding: 0 64px;
+  padding: 0;
  }
  .slider .img_items:last-child {
   display: none;
@@ -1184,7 +1184,7 @@ body {
 }*/
 .slider {
   grid-template-columns:270px 270px;
-  padding: 0 15px;
+  padding: 0;
 }
 .img_items {
   height: 435px;
@@ -1361,6 +1361,6 @@ body {
   }
   .slider {
     grid-template-columns: 270px;
-    padding: 0 15px;
+    width: 270px;
   }
 }
