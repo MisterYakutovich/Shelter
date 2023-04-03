@@ -142,6 +142,35 @@
   .header_link_pets:hover, .header_link:focus, .header_link:active {
     border-bottom: 3px solid #F1CDB3;
   }
+  /*---header burger---*/
+  .header_burger {
+    display: none;
+    position: relative;
+    width: 30px;
+    height: 22px;
+  }
+  .burger_line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0px;
+    left: 0px;
+    border: 2px solid #000000;
+  }
+  .burger_line_1 {
+    top: 0;
+  }
+  .burger_line_4 {
+    bottom: 0;
+  }
+  .burger_line_3 {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .burger_line_2 {
+    top: -50%;
+    transform: translateY(50%);
+  }
   /*---section our_pets---*/
   .our_pets {
     height: 1342px;
@@ -322,11 +351,12 @@
   .pets_footer {
     height: 350px;
     background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),#211F20;
+    padding: 0 30px;
   }
   .wrapper_footer_pets {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    max-width: 1200px;
     height: 310px;
     position: relative;
     top: 40px;
@@ -429,3 +459,208 @@
     width: 300px;
     height: 310px;
   }
+
+  @media screen and (max-width: 1279px){
+
+    .wrapper_pets_header {
+      padding: 0 30px;
+      max-width: 100%;
+    }
+    .our_pets {
+      height: 1733px;
+    }
+    .wrapper_pets_content {
+      height: 1583px;
+      width: 100%;
+      padding: 0 30px;
+      top: 80px;
+    }
+    .card_content_slider {
+      top: 30px;
+      height: 1365px;
+      grid-template-columns: repeat(3,270px);
+      grid-template-rows: repeat(3,435px);
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+   
+   /* .img_items_pets:last-child {
+      display: none;
+    }
+    .img_items_pets:nth-child(7){
+      display: none;
+    }*/
+    .item_title_pets {
+      margin-bottom: 0;
+    }
+    .navigation {
+      top: 70px;
+    }
+  }
+    /*--footer 1000--*/
+
+    @media  screen and (max-width:1000px) {
+      .pets_footer {
+        height: 639px;
+        padding: 0;
+      }
+      .wrapper_footer_pets {
+        max-width: 100%;
+        padding: 0 30px;
+        flex-wrap: wrap;
+        height: 100%;
+        top: 0;
+      }
+      .footer_contacts_pets {
+        margin-left: 34px;
+        top: 30px;
+      }
+      .footer_locations_pets {
+        margin-right: 34px;
+        top: 30px;
+      }
+      .contacts_items_pets li:last-child {
+        height: 32px;
+      
+      }
+      .dog_puppy_pets {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .dog_puppy_pets img {
+        top:49px;
+        position: relative;
+      }
+    }
+    @media screen and (max-width: 1050px){
+      .card_content_slider {
+        grid-template-columns: repeat(2,270px);
+        width: 580px;
+      }
+      .img_items_pets:last-child {
+        display: none;
+      }
+      .img_items_pets:nth-child(7){
+        display: none;
+      }
+    }
+    @media screen and (max-width: 767px){
+     
+      .pets_header {
+        padding: 0 20px;
+        max-width: 100%;
+      }
+      .wrapper_pets_header {
+        padding: 0;
+      }
+      .header_burger {
+        display: block;
+      }
+      .navbar_pets{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #717171;
+        padding: 50px;
+        z-index: 10;
+        transform: translateX(100%);
+        transition: .2s all linear;
+    }
+    /*section pets 768-320px*/
+    .our_pets {
+      height: 1649px;
+    }
+    .wrapper_pets_content {
+      height: 1565px;
+      padding: 0 10px;
+      top: 42px;
+    }
+    .wrapper_pets_content h1 {
+      width: 100%;
+      height: 64px;
+      font-size: 23px;
+    }
+    .card_content_slider {
+      grid-template-columns: 270px;
+      top: 42px;
+      padding: 0;
+      width: 270px;
+    }
+    .img_items_pets:nth-child(6) {
+      display: none;
+    }
+    .img_items_pets:nth-child(5) {
+      display: none;
+    }
+    .img_items_pets:nth-child(4) {
+      display: none;
+    }
+    .navigation {
+      width: 100%;
+      top: 82px;
+    }
+  
+  .pets_footer {
+    height: 809px;
+  }
+  .wrapper_footer_pets {
+    top: 30px;
+    padding: 0 10px;
+    height: 779px;
+  }
+  .footer_contacts_pets {
+    top:0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 208px;
+    width: 100%;
+  }
+  .footer_contacts_pets h3 {
+    font-size: 25px;
+    text-align: center;
+    height: 64px;
+    width: 100%;
+    padding: 0 36px;
+  }
+  .footer_contacts_pets ul li {
+    margin-top: 40px;
+    height: 32px;
+    width: 257px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer_locations_pets {
+    margin-left: auto;
+    margin-right: auto;
+    height: 208px;
+    width: 100%;
+    top: 4px;
+  }
+  .footer_locations_pets h3 {
+    font-size: 25px;
+    text-align: center;
+    height: 64px;
+    width: 100%;
+    padding: 0 36px;
+  }
+  .footer_locations_pets ul li {
+    margin-top: 40px;
+    height: 32px;
+    width: 257px;
+    margin-left: auto;
+    margin-right: auto;
+  
+  }
+  .locations_items_pets span {
+    font-size: 17px;
+  }
+  .dog_puppy_pets img {
+    width: 260px;
+    height: 269px;
+    top: 34px;
+  }
+}
+  
