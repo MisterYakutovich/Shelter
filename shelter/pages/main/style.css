@@ -770,7 +770,13 @@ body {
 .locations_items {
   padding: 0;
   margin: 0;
+  margin-top: 45px;
  
+}
+.locations_items .item:first-child a span {
+  display: block;
+  margin-left: 42px;
+  margin-top: -33px;
 }
 .locations_items span {
   margin-left: 20px;
@@ -783,7 +789,9 @@ body {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+ 
 }
+
 .dog_puppy img {
   width: 300px;
   height: 310px;
