@@ -1099,6 +1099,7 @@ body {
     transform: translateX(100%);
     transition: .2s all linear;
 }
+
 .start_screen {
   height: 673px;
   padding: 0 10px;
