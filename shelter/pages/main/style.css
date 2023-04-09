@@ -373,6 +373,132 @@ body {
   position: relative;
   top: 0px;
 }
+/*--modal_window 1280 start--*/
+
+.container_modal_window {
+ /* width: 952px;
+ height: 552px;*/
+ width: 100%;
+ height: 100%;
+ z-index: 2;
+ position: fixed;
+ left: 0;
+ top: 0;
+ background-color:rgba(0, 0, 0, .8) ;
+ display: none;
+ 
+}
+.container_modal_window.active {
+  display: block;
+}
+.header_nav_close {
+  width: 52px;
+  height: 52px;
+  position: relative;
+  top: 100px;
+  left: 82%;
+  z-index: 12;
+  cursor: pointer;
+  border-radius: 100px;
+  border: 2px solid #F1CDB3;
+}
+.header_close_line {
+ width: 50%;
+ left: 25%;
+  display: block;
+  background: #F1CDB3;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+}
+.header_close_line:first-child {
+  transform: translateY(-50%) rotate(45deg);
+}
+.header_close_line:last-child {
+  transform: translateY(-50%) rotate(-45deg);
+}
+.modal_window {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  height: 500px;
+  background: #FAFAFA;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+ margin-top: 100px;
+  
+}
+.modal_window img {
+  width: 500px;
+  height: 500px;
+ 
+}
+.content_modal_window {
+  width: 351px;
+  height: 362px;
+  margin: 102px 20px 88px 29px;
+}
+.content_modal_window .content_name{
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #000000;
+  width: 145px;
+  height: 45px;
+  margin: 0;
+}
+.content_type_breed {
+  width: 151px;
+  height: 23px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.content_description {
+  width: 350px;
+  height: 102px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #000000;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.content_items {
+  width: 154px;
+  height: 102px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.content_item {
+  margin-bottom: 11px;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #000000;
+}
+.content_item:last-child {
+  margin-bottom: 0;
+}
+/*--modal_window 1280 end--*/
 .img_items {
   width: 270px;
   height: 435px;
@@ -858,6 +984,54 @@ body {
   max-width: 100%;
   padding: 0 30px;
  }
+ /*--modal_window 1280 start--*/
+ .modal_window {
+ width: 630px;
+ height: 350px;
+ }
+ .modal_window img {
+  width: 350px;
+  height: 350px;
+ }
+ .container_modal_window {
+  width: 100%;
+ }
+ .content_modal_window {
+  width: 260px;
+  height: 303px;
+  margin: 10px 9px 37px 11px;
+ }
+ .content_modal_window .content_name{
+  width: 145px;
+  height: 45px;
+ 
+ }
+ .content_type_breed {
+  width: 151px;
+  height: 23px;
+  font-size: 13px;
+  line-height: 110%;
+ }
+ .content_description {
+  width: 260px;
+  height: 98px;
+  font-size: 13px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ .contacts_items {
+  width: 154px;
+  height: 87px;
+ }
+ .header_nav_close {
+  top: 40px;
+  position: fixed;
+  left: 92%;
+ }
+ .content_item {
+  margin-bottom: 6px;
+ }
+
  .slider {
   width: 580px;
   grid-template-columns: repeat(2,270px);
@@ -1226,6 +1400,47 @@ body {
 .slider {
   grid-template-columns:270px 270px;
   padding: 0;
+}
+/*--modal_window 768 start--*/
+.container_modal_window {
+  width: 100%;
+
+}
+.content_modal_window {
+  margin: 0;
+  width: 240px;
+  height: 341px;
+}
+.modal_window {
+  width: 240px;
+  height: 341px;
+}
+.modal_window img {
+  display: none;
+}
+.content_modal_window .content_name {
+  margin-left: auto;
+  margin-right: auto;
+}
+.content_type_breed {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.content_description {
+  width: 220px;
+  height: 112px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+.content_items {
+  height: 87px;
+  margin-left: 25px;
+  list-style: circle ;
+}
+.header_nav_close {
+  left: 80%;
 }
 .img_items {
   height: 435px;

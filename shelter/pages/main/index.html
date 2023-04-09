@@ -65,28 +65,47 @@
         <section class="pets" id="our_friends">
             <div class="wrapper_pets">
                 <h3>Our friends who <br>are looking for a house</h3>
-                <div class="button_arrow_left">
+                <div class="button_arrow_left" onclick="showSliderLeft()">
                     <img src="../../img/jpg/arrow_left.jpg" alt="arrow_left">
                 </div>
-                <div class="slider">
-                    <div class="img_items">
-                        <img src="../../img/jpg/pets-katrine.jpg" alt="Katrine">
-                        <h2 class="item_title">Katrine</h2>
+                <div class="slider" >
+                    <div class="container_modal_window">
+                        <div class="header_nav_close">
+                            <span class="header_close_line"></span>
+                            <span class="header_close_line"></span>
+                        </div>
+                        <div class="modal_window">
+                            <img src="../../img/jpg/pets-jennifer.jpg">
+                            <div class="content_modal_window">
+                                <h3 class="content_name">Jennifer</h3>
+                                <h4 class="content_type_breed">Dog - Labrador</h4>
+                                <p class="content_description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                                <ul class="content_items">
+                                    <li class="content_item" id="">Age: 2 months</li>
+                                    <li class="content_item" id="">Inoculations: none</li>
+                                    <li class="content_item" id="">Diseases: none</li>
+                                    <li class="content_item" id="">Parasites: none</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_items" id="img_items_1">
+                        <img  src="../../img/jpg/pets-katrine.jpg" id="1_myimg" alt="Katrine">
+                        <h2 class="item_title" id="item_title_1">Katrine</h2>
                         <button class="img_items_button">Learn more</button>
                     </div>
-                   
-                    <div class="img_items">
-                        <img src="../../img/jpg/pets-jennifer.jpg" alt="Jennifer">
-                        <h2 class="item_title">Jennifer</h2>
+                    <div class="img_items" id="img_items_2">
+                        <img  id="2_myimg" src="../../img/jpg/pets-jennifer.jpg" id="2_myimg" alt="Jennifer">
+                        <h2 class="item_title" id="item_title_2">Jennifer</h2>
                         <button class="img_items_button">Learn more</button>
                     </div>
-                    <div class="img_items">
-                        <img src="../../img/jpg/pets-woody.jpg" alt="Woody">
-                        <h2 class="item_title">Woody</h2>
+                    <div class="img_items" id="img_items_3">
+                        <img  id="3_myimg" src="../../img/jpg/pets-woody.jpg" id="3_myimg" alt="Woody">
+                        <h2 class="item_title" id="item_title_3">Woody</h2>
                         <button class="img_items_button">Learn more</button>
                     </div>
                 </div>
-                <div class="button_arrow_right">
+                <div class="button_arrow_right" onclick="showSliderRight()">
                     <img src="../../img/jpg/arrow_right.jpg" alt="arrow_right">
                 </div>
                 <a href="../pets/pets.html" class="button_primary">Get to know the rest</a>
@@ -217,5 +236,7 @@
         </div>
     </footer>
     <script src="main.js"></script>
+    <script src="popap.js"></script>
+    <script src="main_slider.js"></script>
 </body>
 </html>
