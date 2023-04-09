@@ -984,7 +984,7 @@ body {
   max-width: 100%;
   padding: 0 30px;
  }
- /*--modal_window 1280 start--*/
+ /*--modal_window 1279 start--*/
  .modal_window {
  width: 630px;
  height: 350px;
@@ -1019,7 +1019,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
  }
- .contacts_items {
+ .content_items {
   width: 154px;
   height: 87px;
  }
@@ -1031,6 +1031,7 @@ body {
  .content_item {
   margin-bottom: 6px;
  }
+/*--modal_window 1279 start--*/
 
  .slider {
   width: 580px;
@@ -1442,6 +1443,8 @@ body {
 .header_nav_close {
   left: 80%;
 }
+/*--modal_window 768 end--*/
+
 .img_items {
   height: 435px;
 }
