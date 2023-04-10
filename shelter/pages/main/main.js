@@ -17,6 +17,13 @@
         burgerItem.classList.toggle("burger_active")
         
     })
+    window.addEventListener('click',e=>{
+        const target=e.target
+        if(!target.closest('.header_list') && !target.closest('.burger')){
+            menu.classList.remove("navbar_active")
+            burgerItem.classList.remove("burger_active")
+        }
+    })
    
    // burgerItem.addEventListener("click",()=>{
      //   menu.classList.remove("navbar_active")

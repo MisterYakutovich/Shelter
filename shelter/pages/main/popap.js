@@ -1,4 +1,5 @@
 const popap=document.querySelector(".container_modal_window")
+const modal=document.querySelector(".modal_window")
 const openPopap=document.querySelectorAll(".img_items" )
 const closePopap=document.querySelector(".header_nav_close")
 
@@ -20,3 +21,10 @@ function deletePopup() {
     popap.classList.remove('active')
     
 }
+
+window.addEventListener('click',e=>{
+    const target=e.target
+    if(!target.closest('.modal_window') && !target.closest('.img_items')){
+        popap.classList.remove('active')
+    }
+})

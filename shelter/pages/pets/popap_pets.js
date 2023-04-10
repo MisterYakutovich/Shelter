@@ -17,6 +17,11 @@ async function showPopup() {
     }
 closePopap.addEventListener('click', deletePopup);
 function deletePopup() {
-    popap.classList.remove('active')
-    
+    popap.classList.remove('active') 
 }
+window.addEventListener('click',e=>{
+    const target=e.target
+    if(!target.closest('.modal_window') && !target.closest('.img_items_pets')){
+        popap.classList.remove('active')
+    }
+})
