@@ -9,12 +9,14 @@
 
 (function () { const header = document.querySelector(".header")
     const burgerItem=document.querySelector(".burger")
+    const body=document.querySelector("body")
     const menu=document.querySelector(".navbar")
     const burger_active=document.querySelector(".burger_active")
     const menuLinks=document.querySelectorAll(".header_link,.header_link_about")
     burgerItem.addEventListener("click",()=>{
         menu.classList.toggle("navbar_active")
         burgerItem.classList.toggle("burger_active")
+        body.classList.toggle('body_frozen');
         
     })
     window.addEventListener('click',e=>{
@@ -22,6 +24,7 @@
         if(!target.closest('.header_list') && !target.closest('.burger')){
             menu.classList.remove("navbar_active")
             burgerItem.classList.remove("burger_active")
+            body.classList.remove('body_frozen');
         }
     })
    

@@ -10,12 +10,14 @@
 (function () { const header = document.querySelector(".pets_header")
     const burgerItem=document.querySelector(".burger")
     const menu=document.querySelector(".navbar_pets")
+    const body=document.querySelector("body")
     const headerList=document.querySelector(".header_list_pets")
     const burger_active=document.querySelector(".burger_active")
     const menuLinks=document.querySelectorAll(".header_link,.header_link_our_pets")
     burgerItem.addEventListener("click",()=>{
         menu.classList.toggle("navbar_pets_active")
         burgerItem.classList.toggle("burger_active")
+        body.classList.toggle('body_frozen');
         
     })
     window.addEventListener('click',e=>{
@@ -23,6 +25,7 @@
         if(!target.closest('.header_list_pets') && !target.closest('.burger')){
             menu.classList.remove("navbar_pets_active")
             burgerItem.classList.remove("burger_active")
+            body.classList.remove('body_frozen');
         }
     })
    

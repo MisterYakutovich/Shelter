@@ -65,10 +65,10 @@
         <section class="pets" id="our_friends">
             <div class="wrapper_pets">
                 <h3>Our friends who <br>are looking for a house</h3>
-                <div class="button_arrow_left" onclick="showSliderLeft()">
+                <div class="button_arrow_left" onclick="showSliderRight()">
                     <img src="../../img/jpg/arrow_left.jpg" alt="arrow_left">
                 </div>
-                <div class="slider" >
+                <div class="slider" id="slider_default">
                     <div class="container_modal_window">
                         <div class="header_nav_close">
                             <span class="header_close_line"></span>
@@ -105,6 +105,45 @@
                         <button class="img_items_button">Learn more</button>
                     </div>
                 </div>
+                <!--block slider start-->
+                <div class="slider" id="slider_next_right" style="display: none;">
+                    <div class="container_modal_window">
+                        <div class="header_nav_close">
+                            <span class="header_close_line"></span>
+                            <span class="header_close_line"></span>
+                        </div>
+                        <div class="modal_window">
+                            <img src="../../img/jpg/pets-jennifer.jpg">
+                            <div class="content_modal_window">
+                                <h3 class="content_name">Jennifer</h3>
+                                <h4 class="content_type_breed">Dog - Labrador</h4>
+                                <p class="content_description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                                <ul class="content_items">
+                                    <li class="content_item" id="age">Age: 2 months</li>
+                                    <li class="content_item" id="inoculations">Inoculations: none</li>
+                                    <li class="content_item" id="diseases">Diseases: none</li>
+                                    <li class="content_item" id="parasites">Parasites: none</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_items" id="3">
+                        <img  src="../../img/jpg/pets-katrine.jpg" id="3_myimg" alt="Katrine">
+                        <h2 class="item_title" id="item_title_3">Katrine</h2>
+                        <button class="img_items_button">Learn more</button>
+                    </div>
+                    <div class="img_items" id="4">
+                        <img  id="2_myimg" src="../../img/jpg/pets-jennifer.jpg" id="4_myimg" alt="Jennifer">
+                        <h2 class="item_title" id="item_title_4">Jennifer</h2>
+                        <button class="img_items_button">Learn more</button>
+                    </div>
+                    <div class="img_items" id="5">
+                        <img  id="3_myimg" src="../../img/jpg/pets-woody.jpg" id="5_myimg" alt="Woody">
+                        <h2 class="item_title" id="item_title_5">Woody</h2>
+                        <button class="img_items_button">Learn more</button>
+                    </div>
+                </div>
+                 <!--block slider end-->
                 <div class="button_arrow_right" onclick="showSliderRight()">
                     <img src="../../img/jpg/arrow_right.jpg" alt="arrow_right">
                 </div>
@@ -235,6 +274,7 @@
             </div>
         </div>
     </footer>
+    <div class="over_block"></div>
     <script src="main.js"></script>
     <script src="popap.js"></script>
     <script src="main_slider.js"></script>

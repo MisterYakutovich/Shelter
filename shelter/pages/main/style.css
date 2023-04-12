@@ -63,6 +63,18 @@
   font-style: normal;
   font-weight: 400;
 }
+body.body_frozen{
+  overflow: hidden;
+}
+.body_frozen .over_block {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(40, 40, 40, 0.2);
+  z-index: 9;
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -1265,10 +1277,10 @@ body {
   }
 .navbar{
     position: fixed;
-    width: 100%;
+    width: 320px;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #292929;
     z-index: 10;
     transform: translateX(100%);
