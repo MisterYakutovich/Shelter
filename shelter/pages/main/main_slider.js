@@ -32,19 +32,19 @@ function getRandomNum(min,max) {
     return Math.floor(Math.random() * (max - min) + min); 
   }
    
-  //function showHide(id) {
-   // var obj_basics = document.getElementById('slider_default');
+  function showHide(id) {
+    //var obj_basics = document.getElementById('slider_default');
    // var obj_standard = document.getElementById('slider_next_right');
    // if(id=='slider_next_right'){   
-     //   document.getElementById("slider_default").style.display='none';
-    //    document.getElementById("slider_next_right").style.display='grid'; 
-    //    document.getElementById("3_myimg").src=data[randomMiddle].img
-    //    document.getElementById("item_title_3").textContent=data[randomMiddle].name
-     //   document.getElementById("4_myimg").src=data[randomMiddle].img
-     //   document.getElementById("item_title_4").textContent=data[randomMiddle].name
-     //   document.getElementById("5_myimg").src=data[randomMiddle].img
-    //    document.getElementById("item_title_5").textContent=data[randomMiddle].name
-   // }
+        document.getElementById("slider_default").style.display='none';
+        document.getElementById("slider_next_right").style.display='grid'; 
+        document.getElementById("3_myimg").src=data[randomMiddle].img
+        document.getElementById("item_title_3").textContent=data[randomMiddle].name
+        document.getElementById("4_myimg").src=data[randomMiddle].img
+        document.getElementById("item_title_4").textContent=data[randomMiddle].name
+        document.getElementById("5_myimg").src=data[randomMiddle].img
+        document.getElementById("item_title_5").textContent=data[randomMiddle].name
+    }
    // if(id=="slider_default"){
       //  document.getElementById("slider_default").style.display='grid';
        // document.getElementById("slider_next_right").style.display='none';  
