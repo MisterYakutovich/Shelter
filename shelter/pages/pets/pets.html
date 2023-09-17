@@ -22,19 +22,25 @@
             <nav class="navbar_pets">
                 <ul class="header_list_pets">
                     <li class="header_item_pets">
-                        <a href="../main/index.html" class="header_link_pets">About the shelter</a>
+                        <a href="../main/index.html" class="header_link_pets js-scroll">About the shelter</a>
                     </li>
                     <li class="header_item_pets">
-                        <a href="#Our_pets" class="header_link_our_pets">Our pets</a>
+                        <a href="#Our_pets" class="header_link_our_pets js-scroll">Our pets</a>
                     </li>
                     <li class="header_item_pets">
-                        <a href="../../pages/main/index.html#Help_shelter" class="header_link_pets">Help the shelter</a>
+                        <a href="../../pages/main/index.html#Help_shelter" class="header_link_pets js-scroll">Help the shelter</a>
                     </li>
                     <li class="header_item_pets">   
-                        <a href="#contacts" class="header_link_pets">Contacts</a>
+                        <a href="#contacts" class="header_link_pets js-scroll">Contacts</a>
                     </li>
                 </ul>
             </nav>
+            <div class="header_burger burger">
+                <span class="burger_line burger_line_1"></span>
+                
+                <span class="burger_line burger_line_3"></span>
+                <span class="burger_line burger_line_4"></span>
+            </div>
         </div>
     </header>
     <main>
@@ -42,43 +48,63 @@
             <div class="wrapper_pets_content">
                 <h1>Our friends who <br>are looking for a house</h1>
                 <div class="card_content_slider">
-                    <div class="img_items_pets">
+                    <div class="container_modal_window">
+                        <div class="header_nav_close">
+                            <span class="header_close_line"></span>
+                            <span class="header_close_line"></span>
+                        </div>
+                        <div class="modal_window">
+                            <img src="../../img/jpg/pets-jennifer.jpg">
+                            <div class="content_modal_window">
+                                <h3 class="content_name">Jennifer</h3>
+                                <h4 class="content_type_breed">Dog - Labrador</h4>
+                                <p class="content_description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                                <ul class="content_items">
+                                    <li class="content_item" id="age">Age: 2 months</li>
+                                    <li class="content_item" id="inoculations">Inoculations: none</li>
+                                    <li class="content_item" id="diseases">Diseases: none</li>
+                                    <li class="content_item" id="parasites">Parasites: none</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_items_pets" id="0">
                         <img src="../../img/jpg/pets-katrine.jpg" alt="Katrine">
                         <h2 class="item_title_pets">Katrine</h2>
                         <button class="img_items_button_pets">Learn more</button>
                     </div>
                    
-                    <div class="img_items_pets">
+                    <div class="img_items_pets" id="1">
                         <img src="../../img/jpg/pets-jennifer.jpg" alt="Jennifer">
                         <h2 class="item_title_pets">Jennifer</h2>
                         <button class="img_items_button_pets">Learn more</button>
                     </div>
-                    <div class="img_items_pets">
+                    <div class="img_items_pets" id="2">
                         <img src="../../img/jpg/pets-woody.jpg" alt="Woody">
                         <h2 class="item_title_pets">Woody</h2>
                         <button class="img_items_button_pets">Learn more</button>
                     </div>
-                    <div class="img_items_pets">
+                    <div class="img_items_pets" id="3">
                         <img src="../../img/jpg/pets-sofia(3).jpg" alt="Sophia">
                         <h2 class="item_title_pets">Sophia</h2>
                         <button class="img_items_button_pets">Learn more</button>
                     </div>
-                    <div class="img_items_pets">
+                    <div class="img_items_pets" id="4">
                         <img src="../../img/jpg/pets-timmy.jpg" alt="Timmy">
                         <h2 class="item_title_pets">Timmy</h2>
                         <button class="img_items_button_pets">Learn more</button>
                     </div>
-                    <div class="img_items_pets">
+                    <div class="img_items_pets" id="5">
                         <img src="../../img/jpg/pets-charly.jpg" alt="Charly">
                         <h2 class="item_title_pets">Charly</h2>
                         <button class="img_items_button_pets">Learn more</button>
                     </div>
-                    <div class="img_items_pets">
+                    <div class="img_items_pets" id="6">
                         <img src="../../img/jpg/pets-scarlet.jpg" alt="Scarlett">
                         <h2 class="item_title_pets">Scarlett</h2>
                         <button class="img_items_button_pets">Learn more</button>
                     </div>
-                    <div class="img_items_pets">
+                    <div class="img_items_pets" id="7">
                         <img src="../../img/jpg/pets-friedy(3).jpg" alt="Freddie">
                         <h2 class="item_title_pets">Freddie</h2>
                         <button class="img_items_button_pets">Learn more</button>
@@ -144,7 +170,9 @@
                 <img src="../../img/jpg/dog_puppy.png" alt="puppy">
             </div>
         </div>
-
     </footer>
+    <div class="over_block"></div>
+    <script src="pets.js"></script>
+    <script src="popap_pets.js"></script>
 </body>
 </html>

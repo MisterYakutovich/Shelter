@@ -22,19 +22,25 @@
             <nav class="navbar">
                 <ul class="header_list">
                     <li class="header_item">
-                        <a href="#About_the_shelter" class="header_link_about">About the shelter</a>
+                        <a href="#About_the_shelter" class="header_link_about js-scroll">About the shelter</a>
                     </li>
                     <li class="header_item">
-                        <a href="../pets/pets.html" class="header_link">Our pets</a>
+                        <a href="../pets/pets.html" class="header_link js-scroll">Our pets</a>
                     </li>
                     <li class="header_item">
-                        <a href="#Help_shelter" class="header_link">Help the shelter</a>
+                        <a href="#Help_shelter" class="header_link js-scroll">Help the shelter</a>
                     </li>
                     <li class="header_item">   
-                        <a href="#contacts" class="header_link">Contacts</a>
+                        <a href="#contacts" class="header_link js-scroll">Contacts</a>
                     </li>
                 </ul>
             </nav>
+            <div class="header_burger burger">
+                <span class="burger_line burger_line_1"></span>
+                
+                <span class="burger_line burger_line_3"></span>
+                <span class="burger_line burger_line_4"></span>
+            </div>
         </header>
         <div class="start_screen">
             <div class="content_start_screen">
@@ -51,36 +57,94 @@
                 <img src="../../img/jpg/about-pets.jpg" alt="pets" class="about_pets_jpg">
                 <div class="about_content">
                     <h3>About the shelter “Cozy House”</h3>
-                    <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
-                    <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+                    <p class="paragraf_one">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
+                    <p class="paragraf_two">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
                 </div>
             </div>
         </section>
         <section class="pets" id="our_friends">
             <div class="wrapper_pets">
                 <h3>Our friends who <br>are looking for a house</h3>
-                <div class="button_arrow_left">
+                <div class="button_arrow_left" onclick="showSliderRight()">
                     <img src="../../img/jpg/arrow_left.jpg" alt="arrow_left">
                 </div>
-                <div class="slider">
-                    <div class="img_items">
-                        <img src="../../img/jpg/pets-katrine.jpg" alt="Katrine">
-                        <h2 class="item_title">Katrine</h2>
+                <div class="slider" id="slider_default">
+                    <div class="container_modal_window">
+                        <div class="header_nav_close">
+                            <span class="header_close_line"></span>
+                            <span class="header_close_line"></span>
+                        </div>
+                        <div class="modal_window">
+                            <img src="../../img/jpg/pets-jennifer.jpg">
+                            <div class="content_modal_window">
+                                <h3 class="content_name">Jennifer</h3>
+                                <h4 class="content_type_breed">Dog - Labrador</h4>
+                                <p class="content_description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                                <ul class="content_items">
+                                    <li class="content_item" id="age">Age: 2 months</li>
+                                    <li class="content_item" id="inoculations">Inoculations: none</li>
+                                    <li class="content_item" id="diseases">Diseases: none</li>
+                                    <li class="content_item" id="parasites">Parasites: none</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_items" id="0">
+                        <img  src="../../img/jpg/pets-katrine.jpg" id="1_myimg" alt="Katrine">
+                        <h2 class="item_title" id="item_title_1">Katrine</h2>
                         <button class="img_items_button">Learn more</button>
                     </div>
-                   
-                    <div class="img_items">
-                        <img src="../../img/jpg/pets-jennifer.jpg" alt="Jennifer">
-                        <h2 class="item_title">Jennifer</h2>
+                    <div class="img_items" id="1">
+                        <img  id="2_myimg" src="../../img/jpg/pets-jennifer.jpg" id="2_myimg" alt="Jennifer">
+                        <h2 class="item_title" id="item_title_2">Jennifer</h2>
                         <button class="img_items_button">Learn more</button>
                     </div>
-                    <div class="img_items">
-                        <img src="../../img/jpg/pets-woody.jpg" alt="Woody">
-                        <h2 class="item_title">Woody</h2>
+                    <div class="img_items" id="2">
+                        <img  id="3_myimg" src="../../img/jpg/pets-woody.jpg" id="3_myimg" alt="Woody">
+                        <h2 class="item_title" id="item_title_3">Woody</h2>
                         <button class="img_items_button">Learn more</button>
                     </div>
                 </div>
-                <div class="button_arrow_right">
+                <!--block slider start-->
+                <div class="slider" id="slider_next_right" style="display: none;">
+                    <div class="container_modal_window">
+                        <div class="header_nav_close">
+                            <span class="header_close_line"></span>
+                            <span class="header_close_line"></span>
+                        </div>
+                        <div class="modal_window">
+                            <img src="../../img/jpg/pets-jennifer.jpg">
+                            <div class="content_modal_window">
+                                <h3 class="content_name">Jennifer</h3>
+                                <h4 class="content_type_breed">Dog - Labrador</h4>
+                                <p class="content_description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+                                <ul class="content_items">
+                                    <li class="content_item" id="age">Age: 2 months</li>
+                                    <li class="content_item" id="inoculations">Inoculations: none</li>
+                                    <li class="content_item" id="diseases">Diseases: none</li>
+                                    <li class="content_item" id="parasites">Parasites: none</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img_items" id="3">
+                        <img  src="../../img/jpg/pets-katrine.jpg" id="3_myimg" alt="Katrine">
+                        <h2 class="item_title" id="item_title_3">Katrine</h2>
+                        <button class="img_items_button">Learn more</button>
+                    </div>
+                    <div class="img_items" id="4">
+                        <img  id="2_myimg" src="../../img/jpg/pets-jennifer.jpg" id="4_myimg" alt="Jennifer">
+                        <h2 class="item_title" id="item_title_4">Jennifer</h2>
+                        <button class="img_items_button">Learn more</button>
+                    </div>
+                    <div class="img_items" id="5">
+                        <img  id="3_myimg" src="../../img/jpg/pets-woody.jpg" id="5_myimg" alt="Woody">
+                        <h2 class="item_title" id="item_title_5">Woody</h2>
+                        <button class="img_items_button">Learn more</button>
+                    </div>
+                </div>
+                 <!--block slider end-->
+                <div class="button_arrow_right" onclick="showSliderRight()">
                     <img src="../../img/jpg/arrow_right.jpg" alt="arrow_right">
                 </div>
                 <a href="../pets/pets.html" class="button_primary">Get to know the rest</a>
@@ -152,7 +216,7 @@
         </section>
         <section class="donations">
             <div class="wrapper_donations">
-                <img src="../../img/jpg/donation-dog.png" alt="donation-dog">
+                <img class="wrapper_donations_img" src="../../img/jpg/donation-dog.png" alt="donation-dog">
                 <div class="donations_content">
                     <h3>You can also make a donation</h3>
                     <h5>Name of the bank / Type of bank account</h5>
@@ -165,7 +229,6 @@
                         </a>
                     </div>
                         <p class="credit_card_title">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p> 
-                    
                 </div>
             </div>
         </section>
@@ -211,5 +274,10 @@
             </div>
         </div>
     </footer>
+    <div class="over_block"></div>
+    <script src="binary.js"></script>
+    <script src="main.js"></script>
+    <script src="popap.js"></script>
+    <script src="main_slider.js"></script>
 </body>
 </html>
