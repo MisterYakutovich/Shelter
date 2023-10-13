@@ -28,9 +28,6 @@
         }
     })
    
-   // burgerItem.addEventListener("click",()=>{
-     //   menu.classList.remove("navbar_active")
-  //  })
     if (window.innerWidth <= 767){
         for (let i=0;i<menuLinks.length;i++){
             menuLinks[i].addEventListener("click",()=>{
@@ -40,7 +37,6 @@
         }
     }
 }());
-//scroll
 (function () {
 
     const smoothScroll = function (targetEl, duration) {
