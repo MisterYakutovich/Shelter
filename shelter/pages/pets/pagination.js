@@ -3,12 +3,11 @@ import { petData } from "./animals.js";
 const popap = document.querySelector(".container_modal_window")
 const openPopap = document.querySelectorAll(".img_items_pets");
 const closePopap = document.querySelector(".header_nav_close");
-
- const btnFirst=document.querySelector(".button_arrow_right_pets.left-one")
- const btnPrev=document.querySelector(".button_arrow_right_pets.left-two")
- const btnLast=document.querySelector(".button_arrow_right_pets.right-one")
- const btnNext=document.querySelector(".button_arrow_right_pets.right-two")
- const btnCurrent=document.querySelector(".button_arrow_right_number")
+const btnFirst=document.querySelector(".button_arrow_right_pets.left-one")
+const btnPrev=document.querySelector(".button_arrow_right_pets.left-two")
+const btnLast=document.querySelector(".button_arrow_right_pets.right-one")
+const btnNext=document.querySelector(".button_arrow_right_pets.right-two")
+const btnCurrent=document.querySelector(".button_arrow_right_number")
  
  let randomPetsArr = []; 
  function generatePets(count, limit) {
@@ -25,10 +24,8 @@ const closePopap = document.querySelector(".header_nav_close");
 let currentPage = 1;
 
 function renderPets(page) {
-  
     document.querySelector(".card_content_slider").innerHTML = "";
     for (let i = 0 + count * (page - 1); i < count * page; i++) {
-     
       const newColumn = document.createElement("div");
       newColumn.classList.add("img_items_pets");
       newColumn.id=i
@@ -59,7 +56,6 @@ function renderPets(page) {
       btnFirst.classList.remove('disabled-btn');
       btnPrev.classList.remove('disabled-btn');
     }
-   
   }
 
   renderPets(1);
@@ -76,27 +72,21 @@ function renderPets(page) {
   
   btnPrev.addEventListener("click", function (e) {
     e.preventDefault();
-  
     if (currentPage <= 1) return;
-  
     currentPage -= 1;
     renderPets(currentPage);
   });
   
   btnFirst.addEventListener("click", function (e) {
     e.preventDefault();
-  
     if (currentPage === 1) return;
-  
     currentPage = 1;
     renderPets(currentPage);
   });
   
   btnLast.addEventListener("click", function (e) {
     e.preventDefault();
-  
     if (currentPage === limit) return;
-  
     currentPage = limit;
     renderPets(currentPage);
   });
@@ -104,7 +94,6 @@ function renderPets(page) {
  }
  
 function setPagination() {
- 
   if (window.innerWidth >= 1200) {
     generatePets(8, 6);
   } else if (window.innerWidth >= 768) {
@@ -117,18 +106,13 @@ function setPagination() {
 }
 
 setPagination();
-
 let timeId;
-
 window.addEventListener("resize", () => {
   clearTimeout(timeId);
-
   timeId = setTimeout(setPagination, 250);
 });
 
- 
 function showPopup(petData) {
- 
   const modal = document.createElement("div");
   modal.classList.add("container_modal_window");
   const card_content_slider= document.querySelector(".card_content_slider")
@@ -152,8 +136,6 @@ function showPopup(petData) {
       </div>
     </div>`;
     card_content_slider.prepend(modal);
-   
- 
   const headerClose = document.querySelector('.header_nav_close');
   headerClose.addEventListener('click', () => {
     modal.remove();
@@ -162,10 +144,7 @@ function showPopup(petData) {
 
 document.querySelector(".card_content_slider").addEventListener('click', (event) => {
   const petIndex = event.target.closest('.img_items_pets').id;
- 
   if (petIndex !== undefined) {
     showPopup(randomPetsArr[petIndex]);
-   
   }
-
 });
