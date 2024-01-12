@@ -37,7 +37,6 @@ async function showSliderRight(id) {
     const res = await fetch(animals );
     const data = await res.json();
     
-   
     randomNum=getRandomNum();
     randomMiddle=getRandomNumMiddle()
     randomNumEnd=getRandomNumEnd()

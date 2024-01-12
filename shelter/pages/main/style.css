@@ -17,34 +17,6 @@
   font-weight: 400;
 }
 
-/*@font-face { 
-    font-family: "Arial";
-    src: local(''),
-         url('../fonts/ArialRegular.woff') format('woff');
-    font-style: normal;
-    font-weight: 400;
-}
-@font-face { 
-  font-family: "Arial";
-  src: local(''),
-       url('../fonts/ArialItalic.woff') format('woff');
-  font-style: normal;
-  font-weight: 400;
-}*/
-/*@font-face { 
-  font-family: "Georgia";
-  src: local(''),
-       url('../fonts/GeorgiaRegular.woff') format('woff');
-  font-style: normal;
-  font-weight: 400;
-}*/
-/*@font-face { 
-  font-family: "Georgia";
-  src: local(''),
-       url('../fonts/GeorgiaBold.woff') format('woff');
-  font-style: normal;
-  font-weight: 700;
-}*/
 @font-face { 
   font-family: "GeorgiaBold";
   src: url("../../fonts/GeorgiaBold.eot");
@@ -280,15 +252,11 @@ body {
     width: 698px;
     height: 728px;
     color: #090979; 
-   /* background:url('../img/jpg/start-screen-puppy.jpg'), linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);*/
-   /* background:url('../img/jpg/start-screen-puppy.jpg'), radial-gradient(100% 215.42% at 0% 0%,#5B483A 0%,#262425 100% ),
-    linear-gradient(0deg,#211f20,#211f20);/*100% 215.42% at 0% 0%,#5B483A 0%,#262425 100%
-    background-size: cover; */
+   
   }
   /*---section about---*/
   .about {
     height: 588px;
-   /* max-width: 1280px;*/
     background: #FFFFFF;
   }
   .wrapper_about {
@@ -388,8 +356,6 @@ body {
 /*--modal_window 1280 start--*/
 
 .container_modal_window {
- /* width: 952px;
- height: 552px;*/
  width: 100%;
  height: 100%;
  z-index: 2;
@@ -967,27 +933,7 @@ body {
     margin-top: 100px;
     float: right;
   }
-  /*----section about---*/
-  /*.about {
-    height: 1048px;
-  }
-  .wrapper_about {
-    max-width: 100%;
-    padding: 0 30px;
-    height: 868px;
-  }
-  .about_pets_jpg {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 80px;
-    order: 1;
-  }
-  .about_content {
-    margin-left: auto;
-    margin-right: auto;
-    order: 0;
-    margin-top: 0px;
-  }/*
+ 
  /*----section pets---*/
  .pets {
   padding: 0;
@@ -1071,37 +1017,7 @@ body {
   padding: 15px 45px;
   font-size: 16px;
  }
- /*----section help 768---*/
- /*.help {
-  height: 779px;
- }
- .wrapper_help {
-  max-width: 100%;
-  height: 599px;
-  padding: 0 69px;
- }
- .wrapper_help h3 {
-  font-size: 34px;
- }
- .help_list {
-  height: 449px;
-  width: 100%;
- }
- .list_items {
-  display: grid;
-  grid-template-columns: repeat(3,170px);
-  grid-template-rows: repeat(3,113px);
-  column-gap: 60px;
-  row-gap: 55px;
-  height: 499px;
- }
- .help_list_item {
-  margin-left: 0;
-  margin-bottom: 0;
- }
- .help_list_item:nth-child(n) {
-  margin-left: 0px;
-}*/
+ 
 /*----section donations 768---*/
 .donations {
   height: 783px;
@@ -1129,35 +1045,7 @@ body {
 .credit_card .credit_card_number {
   font-size: 19px;
 }
-/*----footer 768---*/
-/*.footer {
-  height: 639px;
-}
-.wrapper_footer {
-  max-width: 100%;
-  padding: 0 30px;
-  flex-wrap: wrap;
-  height: 100%;
-}
-.footer_contacts {
-  margin-left: 34px;
-  top: 30px;
-}
-.footer_locations {
-  margin-right: 34px;
-  top: 30px;
-}
-.contacts_items li:last-child {
-  height: 32px;
 
-}
-.dog_puppy {
-  margin-left: auto;
-  margin-right: auto;
-}
-.dog_puppy img {
-  top: 49px;
-}*/
 }
 @media screen and (max-width: 1100px){
   /*---section about---*/
@@ -1181,7 +1069,6 @@ body {
    .wrapper_help {
     max-width: 100%;
     height: 599px;
-   /* padding: 0 69px;*/
    }
    .wrapper_help h3 {
     font-size: 34px;
